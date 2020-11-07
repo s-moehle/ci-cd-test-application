@@ -1,5 +1,5 @@
 FROM raspbian/stretch
-RUN apt install npm
+CMD apt install npm
 COPY . .
 # install packages
 RUN cd src/client
