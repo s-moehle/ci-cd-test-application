@@ -1,5 +1,6 @@
 FROM raspbian/stretch
 CMD apt update
+CMD apt upgrade
 #CMD curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 #CMD apt install -y nodejs
 #CMD apt install -y npm
