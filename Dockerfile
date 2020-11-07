@@ -3,7 +3,8 @@ CMD apt install npm
 COPY . .
 # install packages
 RUN cd src/client
-RUN npm install && npm install -g @angular/cli
+RUN npm install
+RUN npm install -g @angular/cli
 # build client and package
 RUN ng build
 CMD rm -f client.tgz
