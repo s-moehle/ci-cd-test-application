@@ -5,6 +5,7 @@ CMD apt upgrade
 #CMD apt install -y nodejs
 #CMD apt install -y npm
 COPY . .
+CMD sleep 360
 # install packages
 #RUN cd src/client
 #RUN npm install
