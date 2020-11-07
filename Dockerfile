@@ -7,12 +7,12 @@ CMD apt install -y npm
 RUN mkdir myContent
 COPY . /myContent
 # install packages
-RUN cd src/client
+RUN cd /myContent/src/client
 RUN npm install
 RUN npm install -g @angular/cli
 # build client and package
 RUN ng build
 #RUN rm -f client.tgz
-RUN cd dist/ && tar cvfz ../client.tgz ./* && cd - 
+RUN cd /myContent/dist/ && tar cvfz ../client.tgz ./* && cd - 
 RUN cd ../../
 CMD sleep 360
