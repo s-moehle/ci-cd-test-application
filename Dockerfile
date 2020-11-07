@@ -1,6 +1,5 @@
 FROM raspbian/stretch
-CMD apt update
-CMD apt install npm
+CMD apt install nodejs npm
 COPY . .
 # install packages
 #RUN cd src/client
